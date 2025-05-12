@@ -1,2 +1,0 @@
-native:Gaanv ke Peer;around:4;startLevel:-1;orientation:1;width:6;length:8;tag:pathnode;farFromTag:pathnode,30;priority:700
-pathlevel:1;priority:70

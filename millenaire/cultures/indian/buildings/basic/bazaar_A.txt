@@ -1,6 +1,0 @@
-native:Bazaar;around:6;startLevel:-1;orientation:3;width:10;length:19;priority:600;tag:market;tag:leasure;farFromTag:leasure,30
-priority:60
-priority:55;rebuildpath:true
-priority:50;pathlevel:1
-priority:45
-priority:40;startLevel:-2;rebuildpath:true

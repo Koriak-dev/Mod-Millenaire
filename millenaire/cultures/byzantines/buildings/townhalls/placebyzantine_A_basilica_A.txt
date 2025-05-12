@@ -1,5 +1,0 @@
-type:subbuilding;native:Basilike;english:Market Hall;startLevel:-1;orientation:1;width:21;length:25;priority:600;tag:market
-priority:60
-priority:55
-priority:50
-priority:45

@@ -1,4 +1,0 @@
-max:2;priority:1000;native:Agrotema;around:4;startLevel:-3;orientation:2;width:17;length:11;male:farmiller_byzantine;female:wife_byzantine;minDistance:60
-priority:100
-priority:95
-priority:90;pathlevel:1

@@ -1,4 +1,0 @@
-max:1;native:Synergio;around:4;startLevel:-1;orientation:2;width:7;length:13;male:artisan_byzantine;female:artwife_byzantine;priority:800;moveinpriority:20;shop:clothing
-priority:160;tag:workspace;tag:Oven
-priority:75
-priority:70;pathlevel:1

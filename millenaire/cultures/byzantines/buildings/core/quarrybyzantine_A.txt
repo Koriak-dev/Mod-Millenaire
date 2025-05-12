@@ -1,4 +1,0 @@
-max:2;priority:1000;native:Latomeio;around:4;startLevel:-4;orientation:2;male:miner_byzantine;female:wife_byzantine;width:13;length:17;minDistance:60
-priority:100
-priority:95;pathlevel:1
-priority:90

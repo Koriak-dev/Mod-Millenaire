@@ -1,7 +1,0 @@
-max:0;native:Forteresse;around:4;startLevel:-1;orientation:3;width:35;length:31;tag:Patrol;signs:2,1,3,5,7,8,6,4,0;shop:townhall;tag:playerth;priority:600
-priority:600;rebuildpath:true
-priority:580
-priority:560
-priority:540
-priority:520;subbuilding:largefort_A_armoury
-priority:500;subbuilding:largefort_A_barrack

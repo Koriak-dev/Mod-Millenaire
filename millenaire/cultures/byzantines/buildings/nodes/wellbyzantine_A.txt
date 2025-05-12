@@ -1,2 +1,0 @@
-native:Pegadi;around:4;startLevel:-7;orientation:3;width:5;length:5;tag:pathnode;maxdistance:70;max:2;farFromTag:pathnode,30;priority:1000;irrigation:5;pathlevel:1
-pathlevel:2;priority:100

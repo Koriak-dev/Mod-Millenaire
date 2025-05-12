@@ -1,25 +1,40 @@
-# eclipse
-bin
-*.launch
-.settings
-.metadata
+# Gradle files
+.gradle/
+build/
+bin/
+out/
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse files
+.settings/
 .classpath
 .project
 
-# idea
-out
-*.ipr
-*.iws
-*.iml
-.idea
+# VS Code files
+.vscode/
 
-# gradle
-build
-.gradle
+# Runtime files
+run/
+logs/
 
-# other
-eclipse
-run
+# Mac OS
+.DS_Store
 
-# Files from Forge MDK
-forge*changelog.txt
+# Local configuration files
+gradle.properties.local
+
+# Build output
+*.jar
+*.war
+*.ear
+
+# Log files
+*.log
+
+# Generated files
+src/generated/

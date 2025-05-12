@@ -1,4 +1,0 @@
-native:Bourou;around:4;startLevel:-1;orientation:3;width:13;length:13;tag:Patrol;minDistance:80;farFromTag:Patrol,50;priority:900
-priority:90
-priority:85
-priority:80;pathlevel:1

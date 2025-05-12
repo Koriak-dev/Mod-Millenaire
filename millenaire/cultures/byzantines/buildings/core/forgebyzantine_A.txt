@@ -1,4 +1,0 @@
-max:1;priority:800;native:Chalkeio;around:4;startLevel:-1;orientation:1;width:10;length:5;male:smith_byzantine;female:wife_byzantine;shop:forge;tag:forge;moveinpriority:15
-priority:80
-priority:75
-priority:70;pathlevel:1

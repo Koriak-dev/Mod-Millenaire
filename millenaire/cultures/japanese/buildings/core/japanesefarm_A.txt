@@ -1,5 +1,0 @@
-max:2;priority:1000;native:Noujou Nojo;around:4;startLevel:-2;orientation:1;male:japanese_Farmer;female:japanese_farmwife;minDistance:50;width:14;length:20
-priority:100
-priority:95
-priority:90;pathlevel:1
-priority:85

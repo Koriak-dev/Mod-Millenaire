@@ -1,2 +1,0 @@
-max:2;priority:1000;native:Chaaval ka ket;around:4;startLevel:-1;orientation:0;minDistance:60;width:11;length:11;tag:paddy;pathwidth:1
-priority:100
