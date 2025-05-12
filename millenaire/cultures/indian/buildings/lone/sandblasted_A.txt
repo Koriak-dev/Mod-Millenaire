@@ -1,0 +1,1 @@
+native:Sunsan Saray;around:4;startLevel:-4;orientation:3;width:15;length:17;startinggood:rice,1,8,16;startinggood:turmeric,1,2,4;startinggood:denier,1,20,44

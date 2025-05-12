@@ -1,0 +1,2 @@
+native:Parko;around:4;startLevel:-1;orientation:3;width:11;length:10;tag:pathnode;max:1;farFromTag:pathnode,30;priority:700
+pathlevel:2;priority:1;priority:70

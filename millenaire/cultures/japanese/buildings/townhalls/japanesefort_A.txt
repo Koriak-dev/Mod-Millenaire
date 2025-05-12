@@ -1,0 +1,8 @@
+max:0;native:Bousai;around:4;startLevel:-1;orientation:1;width:37;length:37;signs:0,5,3,1,2,4,6,8,7;shop:japanesetownhall;male:japanese_samuraigeneral;female:japanese_bravewoman;tag:Oven;priority:600;tag:leasure
+priority:600;startLevel:-3
+priority:580
+priority:560
+priority:540
+priority:520
+priority:500;rebuildpath:true
+priority:480

@@ -1,0 +1,4 @@
+max:1;french:Tour de guet;around:4;startLevel:-1;orientation:0;width:9;length:9;tag:Patrol;minDistance:80;farFromTag:Patrol,50;priority:900
+startLevel:0;priority:90
+startLevel:0;priority:85
+startLevel:-1;priority:80;pathlevel:1

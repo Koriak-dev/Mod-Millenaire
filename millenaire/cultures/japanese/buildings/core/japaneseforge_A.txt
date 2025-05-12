@@ -1,0 +1,5 @@
+max:1;priority:800;native:Tansetsu;around:4;startLevel:-2;orientation:1;width:14;length:17;male:japanese_smith;female:japanese_peasantwife;shop:forge;tag:forge;moveinpriority:15
+priority:80
+priority:75;pathlevel:1
+priority:70
+priority:65

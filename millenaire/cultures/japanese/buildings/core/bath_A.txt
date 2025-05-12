@@ -1,0 +1,7 @@
+native:Sentou;around:4;startLevel:-2;orientation:1;width:27;length:27;pathlevel:1;max:0;tag:leasure;farFromTag:leasure,30;priority:400
+priority:40
+priority:35
+priority:30
+priority:25;pathlevel:2
+priority:20
+priority:15

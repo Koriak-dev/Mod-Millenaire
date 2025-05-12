@@ -1,0 +1,58 @@
+version:4.8.0
+Millénaire: Habitantes japoneses
+
+Cabezas de la aldea
+
+Shuken しゅくん: Señor. Este hombre vive en un fuerte amurallado del cual él gobierna a su gente. Él sale a patrullar y matar monstruos. También defenderá su aldea hasta la muerte y matará a cualquiera que ponga en peligro su aldea.
+
+Kokushi こくし: Capataz. El Kokushi dirigirá una aldea desde la oficina imperial. Él hace que el pueblo trabaje duro y los alienta a orar. También exige altos impuestos a los aldeanos, pero son muy religiosos y en paz consigo mismos, por lo que no hay quejas.
+
+Chōkan ちょうかん:Jefe. Este hombre es realmente un campesino, pero los japoneses necesitan mucha comida para que alguien tenga que dirigir una aldea agrícola. Él es uno de los ancianos elegidos para dirigir la aldea. Dará consejos a los aldeanos sobre las técnicas de cultivo y lo defenderá de los monstruos.
+
+Touji: Jefe Brewer. Este artesano calificado produce sake, cuyo renombre asegura la prosperidad de su pueblo comercial.
+NEW_PAGE
+Mujeres
+
+Jojoufu じょじょうふ: Mujer valiente. Esta es la esposa de un guardia o soldado. Ella hará tareas normales como cultivar en los campos o hacer paja. Pero cuando los hombres están peleando, ella tiene la tarea de defender al pueblo hasta el último aliento. Tenga cuidado de cómo la mira como un movimiento erróneo de los ojos y lo ha tenido.
+
+Reifujin れいふじん: Dama. Esta mujer es la esposa de un hombre rico, generalmente el líder de la aldea. Intenta hacerse bella y no hace mucho más ... en absoluto.
+
+Kuramoto: Mujer Brewer. Este especialista en producción de sake trabaja con su esposo en la cervecería.
+
+Tsuma つま: Esposa. Estas mujeres hacen las tareas que los hombres no quieren hacer como cuidar los campos, hacer paja y cocinar alimentos. Este es un trabajo aburrido y agotador, pero no pueden quejarse sin ciertas repercusiones. Sin embargo, sin estas mujeres, el pueblo morirá de hambre.
+NEW_PAGE
+Hombres
+
+Kikori きこり: Maderero. Este hombre conoce sus árboles y sabe cuáles cortar para construir. Levanta cada árbol de un árbol joven hasta que son lo suficientemente altos como para cortar madera. Él también tomará parte en asaltar otras aldeas.
+
+Saikushi さいくし: Artesano. Este hombre crea papel de arroz y hace paredes de papel de eso. él también hará marcos de madera para la aldea también. Sin él, la aldea se verá terriblemente aburrida y no habrá nada que distraiga a las personas que asaltan la aldea cuando pasan.
+
+Hyakushou ひゃくしょう: Agricultor de trigo. Este hombre planta trigo en su granja para almacenar alimentos. Él tiene su propia parcela de tierra y la cuida bien.
+
+Kaji かじ: Herrero del ejército El Kaji es un soldado mismo. Experto en el arte de fabricar armas y armaduras, se le ha otorgado la posición de herrero para fabricar armas que no se rompan con el impacto y armaduras que pueden detener las armas más punzantes.
+
+Kajiya かじや: Herrero. El Kajiya es un aldeano que sabe cómo manejar un horno y cómo hacer las herramientas para los trabajos cotidianos en el pueblo. Este hombre puede ser muy rico si sus herramientas son de calidad y tienen una gran demanda.
+
+Bushi ぶし: Guerrero. La clase Bushi son todos los guerreros educados en un ejército del período Heian. Van a la guerra con otras aldeas y tienen un arco Yumi o una Espada Tachi como sus armas. No muestran misericordia y aceptan cualquier desafío.
+
+Keibou けいぼう: Guardia. El Keibou protege al pueblo de los invasores. También pueden ir a la guerra con otras aldeas si es necesario. Tienen un arco Yumi o una espada Tachi como sus armas. No me metería con estos tipos.
+
+Chounin ちょうにん: Comerciante. El Chounin intercambia bienes (materiales de construcción, comida, etc.) con otras aldeas y obtiene bienes muy necesarios a cambio. Después de un largo día viajando, al Chounin le gusta relajarse en las hospitalarias posadas.
+
+Ryoushi りょうし: Pescador. Ryoushi son los pescadores en el pueblo y van a pescar en el lago fuera de su casa. El Ryoushi a veces no tiene suerte para pescar y no puede alcanzar su cuota diaria.
+
+Koufu こうふ: Minero. Los Koufu esclavizan la extracción de piedra y arena. También fabrican vidrio de arena y piedra de adoquines con su horno.
+
+Souryo そうりょ: Monje. El Souryo es un hombre muy respetable y conoce profundamente el camino del budismo. Los aldeanos acuden a este hombre en busca de consejos sobre cómo estar en paz consigo mismos.
+
+Noufu のうふ: Campesino. Los campesinos construyen edificios en el pueblo y cultivan en el arrozal. También matará pollos por comida. No hay descanso para los campesinos.
+NEW_PAGE
+Niños
+
+Danshi だんし: Muchacho Joven. Lo suficientemente grande como para mudarse a un edificio y tener su propia profesión. Todos los Danshi sueñan con convertirse en guerreros, pero la mayoría de las veces su sueño no se hace realidad.
+
+Jou じょう: Muchacha Joven. Ella es lo suficientemente mayor como para alejarse de casa y casarse donde luego usará las habilidades que aprendió de su madre en el mundo real.
+
+Otokonoko おとこのこ: Chico. Juega en el pueblo y crece más lento.
+
+Onnanoko おんなのこ: Niña. Juega en el pueblo y crece más lento.

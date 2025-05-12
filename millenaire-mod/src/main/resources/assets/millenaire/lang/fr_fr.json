@@ -1,0 +1,19 @@
+{
+  "block.millenaire.village_marker": "Marqueur de village",
+  "block.millenaire.civilisation_altar": "Autel de civilisation",
+  
+  "item.millenaire.civilisation_scroll": "Parchemin de civilisation",
+  "item.millenaire.village_map": "Carte de village",
+  
+  "itemGroup.millenaire": "Millénaire",
+  
+  "message.millenaire.village_found": "Village découvert : %s",
+  "message.millenaire.reputation_gained": "Réputation avec %s augmentée de %d",
+  
+  "civilisation.millenaire.normand": "Normand",
+  "civilisation.millenaire.azteque": "Aztèque",
+  "civilisation.millenaire.japonais": "Japonais",
+  "civilisation.millenaire.byzantine": "Byzantin",
+  "civilisation.millenaire.indian": "Indien",
+  "civilisation.millenaire.mayan": "Maya"
+}

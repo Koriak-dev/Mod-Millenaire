@@ -1,0 +1,19 @@
+{
+  "block.millenaire.village_marker": "Marcador de aldea",
+  "block.millenaire.civilisation_altar": "Altar de civilización",
+  
+  "item.millenaire.civilisation_scroll": "Pergamino de civilización",
+  "item.millenaire.village_map": "Mapa de aldea",
+  
+  "itemGroup.millenaire": "Milenario",
+  
+  "message.millenaire.village_found": "Aldea descubierta: %s",
+  "message.millenaire.reputation_gained": "Reputación con %s aumentada en %d",
+  
+  "civilisation.millenaire.normand": "Normando",
+  "civilisation.millenaire.azteque": "Azteca",
+  "civilisation.millenaire.japonais": "Japonés",
+  "civilisation.millenaire.byzantine": "Bizantino",
+  "civilisation.millenaire.indian": "Indio",
+  "civilisation.millenaire.mayan": "Maya"
+}

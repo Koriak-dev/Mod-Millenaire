@@ -1,0 +1,1 @@
+native:Ch’en;around:4;startLevel:-4;orientation:3;width:6;length:6;pathlevel:1;irrigation:5;tag:pathnode;farFromTag:pathnode,30;maxdistance:70;priority:1000

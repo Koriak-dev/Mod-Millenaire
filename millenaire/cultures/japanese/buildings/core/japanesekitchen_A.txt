@@ -1,0 +1,5 @@
+native:Daidokoro;around:4;startLevel:-1;orientation:3;width:8;length:12;tag:kitchen;tag:oven;shop:kitchen;priority:800;pathlevel:1
+priority:80
+priority:75
+priority:70
+priority:65;pathlevel:2

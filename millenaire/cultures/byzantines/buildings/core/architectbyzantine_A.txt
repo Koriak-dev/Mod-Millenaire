@@ -1,0 +1,5 @@
+max:1;priority:800;native:Technites Spiti;around:4;startLevel:-1;orientation:2;male:architect_byzantine;female:wife_byzantine;length:9;width:7;moveinpriority:15
+priority:80
+priority:75;pathlevel:1
+priority:70
+priority:65

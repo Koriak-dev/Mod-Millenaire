@@ -1,0 +1,4 @@
+max:1;priority:1000;native:Suiden;around:4;startLevel:-2;orientation:2;minDistance:60;width:29;length:28;tag:paddy
+priority:100;pathlevel:1
+priority:95
+priority:90

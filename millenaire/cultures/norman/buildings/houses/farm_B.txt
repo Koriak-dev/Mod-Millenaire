@@ -1,0 +1,6 @@
+priority:1000;french:Ferme;around:4;startLevel:-1;orientation:2;male:farmer;female:wife;minDistance:50;width:16;length:14
+priority:100
+priority:95
+priority:90;pathlevel:1
+priority:85
+priority:80

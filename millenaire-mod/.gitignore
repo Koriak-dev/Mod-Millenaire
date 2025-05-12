@@ -1,0 +1,40 @@
+# Gradle files
+.gradle/
+build/
+bin/
+out/
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse files
+.settings/
+.classpath
+.project
+
+# VS Code files
+.vscode/
+
+# Runtime files
+run/
+logs/
+
+# Mac OS
+.DS_Store
+
+# Local configuration files
+gradle.properties.local
+
+# Build output
+*.jar
+*.war
+*.ear
+
+# Log files
+*.log
+
+# Generated files
+src/generated/

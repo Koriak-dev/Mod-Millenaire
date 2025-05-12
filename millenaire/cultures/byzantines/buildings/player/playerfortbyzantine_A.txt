@@ -1,0 +1,11 @@
+max:0;priority:600;native:Frourio;around:2;startLevel:-1;orientation:3;tag:patrol;length:41;width:43;signs:3,1,2,0,5,4,6,8,7;shop:townhall;tag:leasure;tag:playerth
+priority:600
+priority:580
+priority:560;subbuilding:playerfortbyzantine_A_bed1;subbuilding:playerfortbyzantine_A_bed2;subbuilding:playerfortbyzantine_A_bed3;subbuilding:playerfortbyzantine_A_forge
+priority:540
+priority:520
+priority:500
+priority:480
+priority:460
+priority:440
+priority:420;startLevel:-6

@@ -1,0 +1,44 @@
+﻿version:1.1.4
+Millénaire: Norman Inhabitants
+
+Village heads
+
+Chevalier:  Riddare. Bor i borgen, därifrån han går ut och patrullerar sitt land och besöker värdshuset. Seupp med att möta honom i strid! Leder soldaterna och borgens by
+
+Moine:  Munk. Bor i klostret, där han mödosamt kopierar uråldriga böcker till nya pargament. En konst, enlight honom.  Head of ecclesiastic hamlets and villages.
+
+Sénéchal :  Seneschal. Övervakar fälten i byn från sin herrgård. Head of agricultural hamlets and villages.
+
+Maître de la Guilde : Guild Master. Supervises the production of the artisans from a Guild House. Head of artisanal hamlets and villages.
+NEW_PAGE
+Women
+
+Villageoise:   Kvinnlig bybo. Nästan alla vuxna kvinnor är av denna sort. Deras roll innebär att hämta resurser insamlade från deras män och lämmna i stadshuset, bygga byggnader och att uppgradera äldre byggnader, samt att sälja och köpa varor från spelaren från olika platser.
+
+Dame:  Dam. Bor i borgen med sin man, där hon skapar vävd tapet från ull till att dekorera borgen med samt att sälja till spelaren.
+NEW_PAGE
+Men
+
+Fermier: Manlig bonde. Bor på gården, där han sår och skördar grödor.
+
+Bûcheron: Timmerman bor i skogshuggarens stuga. Samlar trä och äpplen i skogsdungen planterar han träd och planterar träd plantor till att skapa mer träd.
+
+Garde:  Vakt. Bor i vakthuset. Gör inget förrutom att dricka cider och be, såvida inte en bybo är attackerad. Inte en bra att vara fiende med, verkligen inte om han är beväpnad med fearsome Normand Broadsword.
+
+Prêtre: Präst. Bor ensamm i prästgården. När han inte ber i kyrkan så sover han.
+
+Forgeron: Smed. Bor i smedjan eller i vapenförrådet. Om järn är tillgängligt, så smider han verktyg om han är i smedjan och vapen om han är i vapenförrådet.
+
+Eleveur : Djurbonde. Bor på boskapsgården, grisfarmen eller kyckling farmen. Samlar olika matrial från djur och gör steamy Norman tripes and tasty boudin noir.
+
+Mineur :  Gruvarbetare. Bor och arbetar i gruvan, tröttsamt samlar in sten och sand. När hans gruva blir upgraderad med en ugn så smälter han dom till slät sten och glas.
+
+Charpentier : Snickare. Bor och arbetar i snickarens hus, Där han gör träramar att användas till att bygga med.
+
+Marchand : Köpman. Går från värdshus till värdshus, byter varor från en by till en annan. Det är hans öde att resa omkring för alla bybors skull.
+
+Marchand étranger : Utländsk köpman. Köpmän från fjärran ställen som besöker marknaden för att sälja sina exotiska varor, innan han lämmnar med dina hårt tjänade deniers.
+NEW_PAGE
+Children
+
+Garçon / fille : kille och tjej. Bor med sina föräldrar, växer på natten, tills de är gamla nog att flytta in i ett tomt hus och bli vuxena.
