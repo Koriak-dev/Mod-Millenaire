@@ -1,18 +1,15 @@
 package com.millenaire.economy;
 
-import com.millenaire.civilisations.village.AbstractVillage;
 import net.minecraft.world.item.ItemStack;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class EconomyManager {
-    private final AbstractVillage village;
     private final Map<String, Integer> resources = new HashMap<>();
     private int wealth;
 
-    public EconomyManager(AbstractVillage village) {
-        this.village = village;
+    public EconomyManager() {
         initializeEconomy();
     }
 

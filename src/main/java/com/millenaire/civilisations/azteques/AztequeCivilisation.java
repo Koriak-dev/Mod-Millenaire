@@ -31,7 +31,26 @@ public class AztequeCivilisation extends AbstractCivilisation {
 
     @Override
     public void generateVillageStructures(VillageData villageData) {
-        // TODO: Implémenter la génération des structures aztèques
+        BlockPos center = villageData.getCenterPos();
+        
+        // Generate basic Aztec structures
+        generatePyramid(center, villageData);
+        generateHouses(center, villageData);
+        generateMarket(center, villageData);
+        
+        villageData.setStructuresGenerated(true);
+    }
+
+    private void generatePyramid(BlockPos center, VillageData villageData) {
+        // TODO: Implement pyramid generation logic
+    }
+
+    private void generateHouses(BlockPos center, VillageData villageData) {
+        // TODO: Implement house generation logic
+    }
+
+    private void generateMarket(BlockPos center, VillageData villageData) {
+        // TODO: Implement market generation logic
     }
 
     @Override 

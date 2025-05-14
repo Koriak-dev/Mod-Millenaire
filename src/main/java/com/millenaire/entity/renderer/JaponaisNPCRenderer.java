@@ -5,6 +5,7 @@ import com.millenaire.entity.models.NPCModel;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
+import javax.annotation.Nonnull;
 
 public class JaponaisNPCRenderer extends MobRenderer<JaponaisNPCEntity, NPCModel<JaponaisNPCEntity>> {
     private static final ResourceLocation TEXTURE = 
@@ -15,7 +16,7 @@ public class JaponaisNPCRenderer extends MobRenderer<JaponaisNPCEntity, NPCModel
     }
 
     @Override
-    public ResourceLocation getTextureLocation(JaponaisNPCEntity entity) {
+    public ResourceLocation getTextureLocation(@Nonnull JaponaisNPCEntity entity) {
         return TEXTURE;
     }
 }

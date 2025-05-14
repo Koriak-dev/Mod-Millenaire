@@ -1,6 +1,5 @@
 package com.millenaire;
 
-import com.millenaire.core.ModConfig;
 import com.millenaire.core.ModConstants;
 import com.millenaire.registries.ModBlocks;
 import com.millenaire.registries.ModItems;

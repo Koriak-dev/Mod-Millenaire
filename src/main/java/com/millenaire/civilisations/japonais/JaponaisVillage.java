@@ -1,7 +1,6 @@
 package com.millenaire.civilisations.japonais;
 import com.millenaire.civilisations.AbstractCivilisation;
 import net.minecraft.world.level.block.DoorBlock;
-import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import com.millenaire.civilisations.village.AbstractVillage;
 import com.millenaire.civilisations.village.VillageData;
 import net.minecraft.core.BlockPos;
@@ -88,9 +87,8 @@ public class JaponaisVillage extends AbstractVillage {
                     level.setBlock(housePos.offset(dx, 1, dz), Blocks.OAK_PLANKS.defaultBlockState(), 3);
                     
                     if (dx == 0 && dz == 0) {
-                        // Création de la porte avec la méthode dédiée
+                        // Création de la porte
                         BlockPos doorPos = housePos.offset(dx, 1, dz);
-                        DoorBlock door = (DoorBlock)Blocks.OAK_DOOR;
                         level.setBlock(doorPos, Blocks.OAK_DOOR.defaultBlockState()
                             .setValue(DoorBlock.FACING, Direction.NORTH)
                             .setValue(DoorBlock.OPEN, false), 3);

@@ -17,11 +17,12 @@ public class VillageMapItem extends Item {
     }
 
     public static VillageData getVillage(ItemStack stack) {
-        if (!stack.hasTag() || !stack.getTag().contains("village")) {
+        CompoundTag tag = stack.getTag();
+        if (tag == null || !tag.contains("village")) {
             return null;
         }
         VillageData data = new VillageData(BlockPos.ZERO, "Unnamed Village", null);
-        data.deserializeNBT(stack.getTag().getCompound("village"));
+        data.deserializeNBT(tag.getCompound("village"));
         return data;
     }
 }

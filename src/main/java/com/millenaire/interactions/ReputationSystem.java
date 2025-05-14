@@ -1,6 +1,5 @@
 package com.millenaire.interactions;
 
-import com.millenaire.civilisations.village.AbstractVillage;
 import net.minecraft.world.entity.player.Player;
 
 import java.util.HashMap;
@@ -8,7 +7,6 @@ import java.util.Map;
 import java.util.UUID;
 
 public class ReputationSystem {
-    private final AbstractVillage village;
     private final Map<UUID, Integer> playerReputations = new HashMap<>();
 
     // Reputation thresholds
@@ -18,8 +16,7 @@ public class ReputationSystem {
     public static final int HONORED = 100;
     public static final int EXALTED = 200;
 
-    public ReputationSystem(AbstractVillage village) {
-        this.village = village;
+    public ReputationSystem() {
     }
 
     public int getReputation(UUID playerId) {

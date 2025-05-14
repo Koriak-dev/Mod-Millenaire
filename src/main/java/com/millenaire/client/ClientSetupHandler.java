@@ -1,6 +1,5 @@
 package com.millenaire.client;
 
-import com.millenaire.civilisations.japonais.JaponaisNPCEntity;
 import com.millenaire.entity.renderer.JaponaisNPCRenderer;
 import com.millenaire.registries.ModEntities;
 import net.minecraft.client.renderer.entity.EntityRenderers;

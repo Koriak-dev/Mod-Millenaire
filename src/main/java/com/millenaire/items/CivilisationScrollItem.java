@@ -16,11 +16,12 @@ public class CivilisationScrollItem extends Item {
     }
 
     public static CivilisationData getCivilisation(ItemStack stack) {
-        if (!stack.hasTag() || !stack.getTag().contains("civilisation")) {
+        CompoundTag tag = stack.getTag();
+        if (tag == null || !tag.contains("civilisation")) {
             return null;
         }
         CivilisationData data = new CivilisationData();
-        data.deserializeNBT(stack.getTag().getCompound("civilisation"));
+        data.deserializeNBT(tag.getCompound("civilisation"));
         return data;
     }
 }

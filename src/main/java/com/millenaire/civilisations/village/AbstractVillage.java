@@ -12,11 +12,11 @@ public abstract class AbstractVillage {
     }
 
     public EconomyManager getEconomyManager() {
-        return new EconomyManager(this);
+        return new EconomyManager();
     }
 
     public ReputationSystem getReputationSystem() {
-        return new ReputationSystem(this);
+        return new ReputationSystem();
     }
     
     public abstract String getName();
