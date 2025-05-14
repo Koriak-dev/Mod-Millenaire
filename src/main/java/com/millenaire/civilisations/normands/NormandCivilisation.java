@@ -1,6 +1,8 @@
 package com.millenaire.civilisations.normands;
 
 import com.millenaire.civilisations.AbstractCivilisation;
+import com.millenaire.civilisations.village.VillageData;
+import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 
 public class NormandCivilisation extends AbstractCivilisation {
@@ -10,18 +12,30 @@ public class NormandCivilisation extends AbstractCivilisation {
         super(ID, "Normand", "European");
     }
 
-    @Override
-    public String getLanguageCode() {
-        return "fr";
+    public String getId() {
+        return "normand";
+    }
+
+    public String getDisplayName() {
+        return "Normand";
+    }
+
+    public ResourceLocation getIcon() {
+        return new ResourceLocation("millenaire", "textures/items/normand_icon.png");
     }
 
     @Override
-    public String getBuildingStyle() {
-        return "Norman";
+    public VillageData createNewVillage(BlockPos centerPos, String villageName) {
+        return new VillageData(centerPos, villageName, this);
     }
 
     @Override
-    public String getClothingStyle() {
-        return "MedievalEuropean";
+    public void generateVillageStructures(VillageData villageData) {
+        // TODO: Implémenter la génération des structures normandes
+    }
+
+    @Override 
+    public void updateVillage(VillageData villageData) {
+        // TODO: Implémenter la mise à jour du village
     }
 }

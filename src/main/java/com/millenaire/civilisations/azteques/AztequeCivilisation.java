@@ -1,6 +1,8 @@
 package com.millenaire.civilisations.azteques;
 
 import com.millenaire.civilisations.AbstractCivilisation;
+import com.millenaire.civilisations.village.VillageData;
+import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 
 public class AztequeCivilisation extends AbstractCivilisation {
@@ -10,18 +12,30 @@ public class AztequeCivilisation extends AbstractCivilisation {
         super(ID, "Aztèque", "Mesoamerican");
     }
 
-    @Override
-    public String getLanguageCode() {
-        return "nah";
+    public String getId() {
+        return "azteque";
+    }
+
+    public String getDisplayName() {
+        return "Azteque";
+    }
+
+    public ResourceLocation getIcon() {
+        return new ResourceLocation("millenaire", "textures/items/azteque_icon.png");
     }
 
     @Override
-    public String getBuildingStyle() {
-        return "Aztec";
+    public VillageData createNewVillage(BlockPos centerPos, String villageName) {
+        return new VillageData(centerPos, villageName, this);
     }
 
     @Override
-    public String getClothingStyle() {
-        return "Aztec";
+    public void generateVillageStructures(VillageData villageData) {
+        // TODO: Implémenter la génération des structures aztèques
+    }
+
+    @Override 
+    public void updateVillage(VillageData villageData) {
+        // TODO: Implémenter la mise à jour du village
     }
 }

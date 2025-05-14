@@ -1,6 +1,8 @@
 package com.millenaire.civilisations.japonais;
 
 import com.millenaire.civilisations.AbstractCivilisation;
+import com.millenaire.civilisations.village.VillageData;
+import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 
 public class JaponaisCivilisation extends AbstractCivilisation {
@@ -10,18 +12,30 @@ public class JaponaisCivilisation extends AbstractCivilisation {
         super(ID, "Japonais", "Asian");
     }
 
-    @Override
-    public String getLanguageCode() {
-        return "ja";
+    public String getId() {
+        return "japonais";
+    }
+
+    public String getDisplayName() {
+        return "Japonais";
+    }
+
+    public ResourceLocation getIcon() {
+        return new ResourceLocation("millenaire", "textures/items/japonais_icon.png");
     }
 
     @Override
-    public String getBuildingStyle() {
-        return "Japanese";
+    public VillageData createNewVillage(BlockPos centerPos, String villageName) {
+        return new VillageData(centerPos, villageName, this);
     }
 
     @Override
-    public String getClothingStyle() {
-        return "Japanese";
+    public void generateVillageStructures(VillageData villageData) {
+        // TODO: Implémenter la génération des structures japonaises
+    }
+
+    @Override 
+    public void updateVillage(VillageData villageData) {
+        // TODO: Implémenter la mise à jour du village
     }
 }

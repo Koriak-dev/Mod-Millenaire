@@ -1,5 +1,9 @@
 package com.millenaire.civilisations;
 
+import com.millenaire.civilisations.azteques.AztequeCivilisation;
+import com.millenaire.civilisations.japonais.JaponaisCivilisation;
+import com.millenaire.civilisations.normands.NormandCivilisation;
+
 import net.minecraft.resources.ResourceLocation;
 
 import java.util.HashMap;

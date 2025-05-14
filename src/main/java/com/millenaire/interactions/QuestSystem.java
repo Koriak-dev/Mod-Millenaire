@@ -1,6 +1,7 @@
 package com.millenaire.interactions;
 
 import com.millenaire.civilisations.village.AbstractVillage;
+import com.millenaire.civilisations.quest.Quest;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 
@@ -29,7 +30,7 @@ public class QuestSystem {
     }
 
     public boolean completeQuest(Player player, Quest quest, ItemStack... items) {
-        if (activeQuests.contains(quest) && quest.isComplete(items)) {
+        if (activeQuests.contains(quest) && quest.isComplete(player)) {
             activeQuests.remove(quest);
             completedQuests.add(quest);
             giveReward(player, quest);

@@ -27,7 +27,7 @@ public abstract class StructureGenerator {
 
     protected boolean isValidPosition(BlockPos pos) {
         BlockState state = level.getBlockState(pos);
-        return state.isAir() || state.getMaterial().isReplaceable();
+        return state.isAir() || state.canBeReplaced();
     }
 
     protected BlockPos findGroundPosition(BlockPos pos) {

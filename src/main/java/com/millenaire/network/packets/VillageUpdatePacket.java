@@ -1,6 +1,7 @@
 package com.millenaire.network.packets;
 
 import com.millenaire.civilisations.village.VillageData;
+import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraftforge.network.NetworkEvent;
 
@@ -18,7 +19,7 @@ public class VillageUpdatePacket {
     }
 
     public static VillageUpdatePacket decode(FriendlyByteBuf buffer) {
-        VillageData data = new VillageData();
+        VillageData data = new VillageData(BlockPos.ZERO, "Unnamed Village", null);
         data.deserializeNBT(buffer.readNbt());
         return new VillageUpdatePacket(data);
     }

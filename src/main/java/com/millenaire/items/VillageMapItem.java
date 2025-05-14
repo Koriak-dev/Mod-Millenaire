@@ -1,6 +1,7 @@
 package com.millenaire.items;
 
 import com.millenaire.civilisations.village.VillageData;
+import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -19,7 +20,7 @@ public class VillageMapItem extends Item {
         if (!stack.hasTag() || !stack.getTag().contains("village")) {
             return null;
         }
-        VillageData data = new VillageData();
+        VillageData data = new VillageData(BlockPos.ZERO, "Unnamed Village", null);
         data.deserializeNBT(stack.getTag().getCompound("village"));
         return data;
     }

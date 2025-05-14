@@ -49,7 +49,9 @@ public class NPCInteractionManager {
 
     private void handleMerchantInteraction(Player player, NPCEntity npc) {
         // Trade interactions
-        village.getEconomyManager().processTrade(player, npc);
+        ItemStack offeredItem = player.getMainHandItem();
+        ItemStack requestedItem = npc.getOfferedItem();
+        village.getEconomyManager().processTrade(offeredItem, requestedItem);
     }
 
     private void handleQuestGiverInteraction(Player player, NPCEntity npc) {
