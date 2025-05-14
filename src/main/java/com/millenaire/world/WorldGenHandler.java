@@ -20,6 +20,12 @@ public class WorldGenHandler {
      */
     @SubscribeEvent
     public static void onWorldLoad(LevelEvent.Load event) {
-        // TODO: Implémenter la génération des structures et villages
+        if (!event.getLevel().isClientSide()) {
+            // Initialiser la génération des villages
+            VillagePlacement.initializeVillageGeneration(event.getLevel());
+            
+            // Enregistrer les structures pour la génération
+            StructureRegistry.registerStructures();
+        }
     }
 }

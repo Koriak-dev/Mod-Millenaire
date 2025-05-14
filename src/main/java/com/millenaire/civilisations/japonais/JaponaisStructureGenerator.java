@@ -15,6 +15,16 @@ import net.minecraft.world.level.Level;
 
 public class JaponaisStructureGenerator extends StructureGenerator {
     /**
+     * Enregistre les structures japonaises pour la génération mondiale
+     */
+    public static void register() {
+        // TODO: Enregistrer les structures auprès du système de génération
+        // - Temples
+        // - Maisons traditionnelles
+        // - Jardins zen
+    }
+
+    /**
      * Constructeur du générateur de structures japonaises
      * @param civilisation La civilisation japonaise associée
      */

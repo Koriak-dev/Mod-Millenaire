@@ -15,6 +15,17 @@ import net.minecraft.world.level.Level;
 
 public class AztequeStructureGenerator extends StructureGenerator {
     /**
+     * Enregistre les structures aztèques pour la génération mondiale
+     */
+    public static void register() {
+        // TODO: Enregistrer les structures auprès du système de génération
+        // - Pyramides
+        // - Temples
+        // - Habitations
+        // - Jardins flottants
+    }
+
+    /**
      * Constructeur du générateur de structures
      * @param civilisation La civilisation aztèque associée
      */

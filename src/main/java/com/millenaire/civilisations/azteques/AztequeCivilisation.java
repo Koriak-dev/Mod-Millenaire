@@ -19,8 +19,10 @@ package com.millenaire.civilisations.azteques;
 
 import com.millenaire.civilisations.AbstractCivilisation;
 import com.millenaire.civilisations.village.VillageData;
+import com.millenaire.registries.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.state.BlockState;
 
 public class AztequeCivilisation extends AbstractCivilisation {
     // Identifiant unique de la civilisation
@@ -78,10 +80,43 @@ public class AztequeCivilisation extends AbstractCivilisation {
      * Génère la pyramide centrale du village aztèque
      */
     private void generatePyramid(BlockPos center, VillageData villageData) {
-        // TODO: Implémenter la logique de génération:
-        // 1. Créer la base carrée
-        // 2. Ajouter les étages successifs
-        // 3. Placer l'autel sacrificiel au sommet
+        // Dimensions de la pyramide
+        final int baseSize = 15;
+        final int height = 5;
+        final int stepHeight = 3;
+        
+        // Matériaux de construction
+        BlockState stoneBlock = ModBlocks.AZTEC_STONE_BLOCK.get().defaultBlockState();
+        BlockState altarBlock = ModBlocks.SACRIFICIAL_ALTAR.get().defaultBlockState();
+        
+        // Génération de la base carrée
+        for (int y = 0; y < stepHeight; y++) {
+            for (int x = -baseSize; x <= baseSize; x++) {
+                for (int z = -baseSize; z <= baseSize; z++) {
+                    BlockPos pos = center.offset(x, y, z);
+                    getWorld().setBlock(pos, stoneBlock, 3);
+                }
+            }
+        }
+        
+        // Ajout des étages successifs
+        for (int step = 1; step <= height; step++) {
+            int stepSize = baseSize - (step * 2);
+            int yPos = step * stepHeight;
+            
+            for (int y = 0; y < stepHeight; y++) {
+                for (int x = -stepSize; x <= stepSize; x++) {
+                    for (int z = -stepSize; z <= stepSize; z++) {
+                        BlockPos pos = center.offset(x, yPos + y, z);
+                        getWorld().setBlock(pos, stoneBlock, 3);
+                    }
+                }
+            }
+        }
+        
+        // Placement de l'autel sacrificiel au sommet
+        BlockPos altarPos = center.above(height * stepHeight);
+        getWorld().setBlock(altarPos, altarBlock, 3);
     }
 
     /**
@@ -103,5 +138,4 @@ public class AztequeCivilisation extends AbstractCivilisation {
         // 2. Zone d'échange de marchandises
         // 3. Espace pour les cérémonies
     }
-
 }

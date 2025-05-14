@@ -29,4 +29,14 @@ public class VillagePlacement {
     public static int getVillageSpacing() {
         return 32; // 32 chunks = 512 blocs
     }
+    
+    /**
+     * Initialise la génération des villages dans le monde
+     * @param world Le monde à initialiser
+     */
+    public static void initializeVillageGeneration(net.minecraft.world.level.LevelAccessor world) {
+        // TODO: Implémenter la logique d'initialisation
+        // - Configurer les points de spawn
+        // - Préparer les données de village
+    }
 }

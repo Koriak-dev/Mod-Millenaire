@@ -28,6 +28,10 @@ public class ClientSetupHandler {
      */
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
-        EntityRenderers.register(ModEntities.JAPONAIS_NPC.get(), JaponaisNPCRenderer::new);
+        event.enqueueWork(() -> {
+            if (ModEntities.JAPONAIS_NPC.isPresent()) {
+                EntityRenderers.register(ModEntities.JAPONAIS_NPC.get(), JaponaisNPCRenderer::new);
+            }
+        });
     }
 }

@@ -15,6 +15,16 @@ import net.minecraft.world.level.Level;
 
 public class NormandStructureGenerator extends StructureGenerator {
     /**
+     * Enregistre les structures normandes pour la génération mondiale
+     */
+    public static void register() {
+        // TODO: Enregistrer les structures auprès du système de génération
+        // - Châteaux
+        // - Maisons à colombages
+        // - Églises
+    }
+
+    /**
      * Constructeur du générateur de structures normandes
      * @param civilisation La civilisation normande associée
      */
