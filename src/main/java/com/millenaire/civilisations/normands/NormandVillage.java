@@ -1,3 +1,12 @@
+/**
+ * FICHIER: NormandVillage.java
+ * DESCRIPTION: Implémentation du village normand
+ * CARACTERISTIQUES:
+ * - Organisation autour d'un port
+ * - Structures en bois et pierre
+ * - Système de défense côtier
+ * - Spécialisé en construction navale
+ */
 package com.millenaire.civilisations.normands;
 
 import com.millenaire.civilisations.AbstractCivilisation;
@@ -12,6 +21,11 @@ public class NormandVillage extends AbstractVillage {
     private final VillageData villageData;
     private final NormandCivilisation civilisation;
 
+    /**
+     * Constructeur du village normand
+     * @param villageData Données du village (position, nom)
+     * @param civilisation Référence à la civilisation normande
+     */
     public NormandVillage(VillageData villageData, NormandCivilisation civilisation) {
         this.villageData = villageData;
         this.civilisation = civilisation;
@@ -46,8 +60,15 @@ public class NormandVillage extends AbstractVillage {
         generateFarms(level, center);
     }
     
+    /**
+     * Génère le château normand avec :
+     * - Une tour centrale de 5x5 blocs
+     * - Des murailles dans les 4 directions
+     * @param level Le monde Minecraft
+     * @param pos Position centrale du château
+     */
     private void generateCastle(Level level, BlockPos pos) {
-        // Tour centrale (5x5)
+        // Tour centrale (5x5 blocs de pierre)
         for (int y = 0; y < 6; y++) {
             for (int x = -2; x <= 2; x++) {
                 for (int z = -2; z <= 2; z++) {
@@ -94,8 +115,16 @@ public class NormandVillage extends AbstractVillage {
         }
     }
     
+    /**
+     * Génère les fermes et champs cultivés normands :
+     * - Disposés en grille autour du village
+     * - Blocs de terre labourée
+     * - Culture de blé
+     * @param level Le monde Minecraft
+     * @param center Centre du village
+     */
     private void generateFarms(Level level, BlockPos center) {
-        // Champs cultivés autour du village
+        // Champs cultivés en cercles concentriques
         for (int x = -15; x <= 15; x += 5) {
             for (int z = -15; z <= 15; z += 5) {
                 if (Math.abs(x) < 10 && Math.abs(z) < 10) continue;

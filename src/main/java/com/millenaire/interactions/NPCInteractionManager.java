@@ -1,3 +1,11 @@
+/**
+ * FICHIER: NPCInteractionManager.java
+ * DESCRIPTION: Gestionnaire central des interactions avec les PNJs
+ * RESPONSABILITES:
+ * - Gérer les différents types d'interactions (maires, marchands, etc.)
+ * - Prévenir le spam d'interactions
+ * - Coordonner avec les autres systèmes (quêtes, économie)
+ */
 package com.millenaire.interactions;
 
 import com.millenaire.civilisations.village.AbstractVillage;
@@ -13,6 +21,13 @@ public class NPCInteractionManager {
     private final AbstractVillage village;
     private final Map<UUID, Long> lastInteractionTimes = new HashMap<>();
 
+    /**
+     * Constructeur du gestionnaire d'interactions
+     * @param village Le village associé à ce gestionnaire
+     * Initialise:
+     * - Le système de suivi des interactions
+     * - La référence au village parent
+     */
     public NPCInteractionManager(AbstractVillage village) {
         this.village = village;
     }
@@ -43,11 +58,26 @@ public class NPCInteractionManager {
         }
     }
 
+    /**
+     * Gère les interactions avec le maire du village
+     * @param player Le joueur en interaction
+     * @param npc Le PNJ maire
+     * Actions:
+     * - Propose de nouvelles quêtes via QuestSystem
+     */
     private void handleMayorInteraction(Player player, NPCEntity npc) {
         // Village management interactions
         village.getQuestSystem().offerNewQuests(player);
     }
 
+    /**
+     * Gère les interactions avec les marchands
+     * @param player Le joueur en interaction
+     * @param npc Le PNJ marchand
+     * Actions:
+     * - Traite les échanges d'items
+     * - Utilise EconomyManager pour valider les transactions
+     */
     private void handleMerchantInteraction(Player player, NPCEntity npc) {
         // Trade interactions
         ItemStack offeredItem = player.getMainHandItem();
@@ -57,11 +87,27 @@ public class NPCInteractionManager {
         }
     }
 
+    /**
+     * Gère les interactions avec les donneurs de quêtes
+     * @param player Le joueur en interaction
+     * @param npc Le PNJ donneur de quêtes
+     * Actions:
+     * - Propose de nouvelles quêtes via QuestSystem
+     * - Vérifie la complétion des quêtes existantes
+     */
     private void handleQuestGiverInteraction(Player player, NPCEntity npc) {
         // Quest interactions
         village.getQuestSystem().offerNewQuests(player);
     }
 
+    /**
+     * Gère les interactions par défaut avec les PNJs
+     * @param player Le joueur en interaction
+     * @param npc Le PNJ standard
+     * Actions:
+     * - Affiche un message de salutation
+     * - Gère les dialogues basiques
+     */
     private void handleDefaultInteraction(Player player, NPCEntity npc) {
         // Basic greetings and small talk
         npc.displayGreeting(player);

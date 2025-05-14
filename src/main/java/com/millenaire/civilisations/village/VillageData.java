@@ -1,3 +1,11 @@
+/**
+ * FICHIER: VillageData.java
+ * DESCRIPTION: Stocke les données persistantes d'un village
+ * RESPONSABILITES:
+ * - Maintenir l'état du village (position, nom, civilisation)
+ * - Sauvegarder/charger les données du village
+ * - Fournir un accès thread-safe aux données
+ */
 package com.millenaire.civilisations.village;
 
 import net.minecraft.core.BlockPos;
@@ -17,6 +25,12 @@ public class VillageData implements INBTSerializable<CompoundTag> {
         // For NBT deserialization
     }
 
+    /**
+     * Constructeur principal pour créer un nouveau village
+     * @param centerPos Position centrale du village (coordonnées du point de spawn)
+     * @param name Nom du village (doit être unique)
+     * @param civilisation Référence à la civilisation propriétaire
+     */
     public VillageData(BlockPos centerPos, String name, AbstractCivilisation civilisation) {
         this.centerPos = centerPos;
         this.name = name;
@@ -35,6 +49,14 @@ public class VillageData implements INBTSerializable<CompoundTag> {
         return civilisation;
     }
 
+    /**
+     * Sérialise les données du village en NBT pour la sauvegarde
+     * @return Un CompoundTag contenant toutes les données du village
+     * Format du tag:
+     * - centerPos: BlockPos (position centrale)
+     * - name: String (nom du village)
+     * - civilisationId: String (ID de la civilisation)
+     */
     @Override
     public CompoundTag serializeNBT() {
         CompoundTag tag = new CompoundTag();

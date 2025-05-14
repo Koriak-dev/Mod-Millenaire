@@ -1,3 +1,12 @@
+/**
+ * FICHIER: MillenaireMod.java
+ * DESCRIPTION: Classe principale du mod Millénaire
+ * RESPONSABILITES:
+ * - Initialisation du mod
+ * - Enregistrement des blocs/items
+ * - Gestion des événements
+ * - Compatibilités
+ */
 package com.millenaire;
 
 import com.millenaire.core.ModConstants;
@@ -13,24 +22,33 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(ModConstants.MOD_ID)
 public class MillenaireMod {
+    /**
+     * Constructeur principal du mod
+     * - Initialise les systèmes de base
+     * - Enregistre les composants
+     */
     public MillenaireMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        // Register registries
+        // Enregistrement des blocs et items
         ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
 
-        // Register setup method
+        // Configuration initiale
         modEventBus.addListener(this::setup);
 
-        // Register ourselves for server and other game events
+        // Enregistrement pour les événements du jeu
         MinecraftForge.EVENT_BUS.register(this);
     }
 
+    /**
+     * Méthode d'initialisation du mod
+     * @param event Événement de setup de Forge
+     */
     private void setup(final FMLCommonSetupEvent event) {
-        LogHelper.info("Initializing Millenaire Mod");
+        LogHelper.info("Initialisation du mod Millénaire");
         CompatibilityManager.checkCompatibilities();
         
-        // Network initialization would go here
+        // TODO: Initialisation du réseau (si nécessaire)
     }
 }

@@ -1,3 +1,11 @@
+/**
+ * FICHIER: JaponaisNPCEntity.java  
+ * DESCRIPTION: Entité NPC pour la civilisation japonaise
+ * RESPONSABILITES:
+ * - Implémenter les comportements spécifiques aux NPC japonais
+ * - Gérer les interactions culturelles
+ * - Définir les caractéristiques des différentes professions
+ */
 package com.millenaire.civilisations.japonais;
 
 import com.millenaire.entity.NPCEntity;

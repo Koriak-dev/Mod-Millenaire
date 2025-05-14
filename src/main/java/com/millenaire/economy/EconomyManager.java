@@ -1,3 +1,11 @@
+/**
+ * FICHIER: EconomyManager.java
+ * DESCRIPTION: Gestionnaire central de l'économie des villages
+ * RESPONSABILITES:
+ * - Gérer les ressources et richesses
+ * - Contrôler les échanges commerciaux
+ * - Mettre à jour les prix du marché
+ */
 package com.millenaire.economy;
 
 import net.minecraft.world.item.ItemStack;
@@ -25,6 +33,12 @@ public class EconomyManager {
         resources.merge(resource, amount, Integer::sum);
     }
 
+    /**
+     * Consomme une quantité d'une ressource si disponible
+     * @param resource Type de ressource à consommer
+     * @param amount Quantité requise
+     * @return true si la ressource était disponible et a été consommée, false sinon
+     */
     public boolean consumeResource(String resource, int amount) {
         if (resources.getOrDefault(resource, 0) >= amount) {
             resources.put(resource, resources.get(resource) - amount);
@@ -37,6 +51,11 @@ public class EconomyManager {
         return resources.getOrDefault(resource, 0);
     }
 
+    /**
+     * Traite un échange commercial entre joueur et village
+     * @param offered Item proposé par le joueur
+     * @param requested Item demandé par le village
+     */
     public void processTrade(ItemStack offered, ItemStack requested) {
         // Process trade logic between player and village
     }

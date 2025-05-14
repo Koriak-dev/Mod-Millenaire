@@ -1,3 +1,11 @@
+/**
+ * FICHIER: CivilisationData.java  
+ * DESCRIPTION: Stocke les données persistantes d'une civilisation
+ * RESPONSABILITES:
+ * - Maintenir l'état de la civilisation
+ * - Gérer la progression et l'évolution
+ * - Sauvegarder/charger les données
+ */
 package com.millenaire.civilisations;
 
 import net.minecraft.nbt.CompoundTag;
@@ -29,6 +37,13 @@ public class CivilisationData implements INBTSerializable<CompoundTag> {
         return description;
     }
 
+    /**
+     * Sérialise les données en NBT pour la sauvegarde
+     * @return CompoundTag contenant :
+     * - civilisationId (String)
+     * - name (String) 
+     * - description (String)
+     */
     @Override
     public CompoundTag serializeNBT() {
         CompoundTag tag = new CompoundTag();
@@ -38,6 +53,11 @@ public class CivilisationData implements INBTSerializable<CompoundTag> {
         return tag;
     }
 
+    /**
+     * Désérialise les données depuis NBT
+     * @param tag Le CompoundTag contenant les données sauvegardées
+     * @throws IllegalArgumentException Si l'ID de civilisation est invalide
+     */
     @Override
     public void deserializeNBT(CompoundTag tag) {
         civilisationId = new ResourceLocation(tag.getString("civilisationId"));

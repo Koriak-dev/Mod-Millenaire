@@ -1,3 +1,11 @@
+/**
+ * FICHIER: NormandCivilisation.java
+ * DESCRIPTION: Implémentation de la civilisation normande
+ * CARACTERISTIQUES:
+ * - Architecture viking/normande
+ * - Spécialisée en construction navale
+ * - Culture guerrière et maritime
+ */
 package com.millenaire.civilisations.normands;
 
 import com.millenaire.civilisations.AbstractCivilisation;

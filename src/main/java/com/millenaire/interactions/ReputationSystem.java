@@ -6,10 +6,25 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
+/**
+ * FICHIER: ReputationSystem.java
+ * DESCRIPTION: Système de gestion de réputation des joueurs
+ * RESPONSABILITES:
+ * - Suivi des réputations par joueur
+ * - Calcul des niveaux de réputation
+ * - Décroissance naturelle de la réputation
+ */
 public class ReputationSystem {
     private final Map<UUID, Integer> playerReputations = new HashMap<>();
 
-    // Reputation thresholds
+    /**
+     * Seuils de réputation:
+     * - HOSTILE: -100 (attaqué à vue)
+     * - NEUTRAL: 0 (comportement par défaut)
+     * - FRIENDLY: 50 (accès aux quêtes basiques)
+     * - HONORED: 100 (accès aux quêtes avancées)
+     * - EXALTED: 200 (accès aux bonus exclusifs)
+     */
     public static final int HOSTILE = -100;
     public static final int NEUTRAL = 0;
     public static final int FRIENDLY = 50;
@@ -36,6 +51,17 @@ public class ReputationSystem {
         addReputation(player.getUUID(), amount);
     }
 
+    /**
+     * Obtient le niveau textuel de réputation d'un joueur
+     * @param playerId UUID du joueur
+     * @return Niveau de réputation sous forme de chaîne:
+     * - "hostile" (<= -100)
+     * - "unfriendly" (-99 à 0)
+     * - "neutral" (1 à 50)
+     * - "friendly" (51 à 100)
+     * - "honored" (101 à 200)
+     * - "exalted" (> 200)
+     */
     public String getReputationLevel(UUID playerId) {
         int rep = getReputation(playerId);
         if (rep <= HOSTILE) return "hostile";

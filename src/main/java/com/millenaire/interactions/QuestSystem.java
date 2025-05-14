@@ -1,3 +1,12 @@
+/**
+ * FICHIER: QuestSystem.java  
+ * DESCRIPTION: Système de gestion des quêtes
+ * RESPONSABILITES:
+ * - Gestion des quêtes actives et complétées
+ * - Distribution des récompenses
+ * - Mise à jour quotidienne des quêtes
+ * - Interaction avec le système de réputation
+ */
 package com.millenaire.interactions;
 
 import com.millenaire.civilisations.village.AbstractVillage;
@@ -9,18 +18,40 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class QuestSystem {
+    // Référence au village associé
     private final AbstractVillage village;
+    
+    // Liste des quêtes en cours
     private final List<Quest> activeQuests = new ArrayList<>();
+    
+    // Liste des quêtes terminées
     private final List<Quest> completedQuests = new ArrayList<>();
 
+    /**
+     * Crée un nouveau système de quêtes pour un village
+     * @param village Le village propriétaire des quêtes
+     */
     public QuestSystem(AbstractVillage village) {
         this.village = village;
     }
 
+    /**
+     * Propose de nouvelles quêtes au joueur
+     * @param player Le joueur à qui proposer des quêtes
+     */
     public void offerNewQuests(Player player) {
-        // Generate new quests based on village state and player reputation
+        // TODO: Générer des quêtes selon:
+        // - Niveau du village
+        // - Réputation du joueur
+        // - Événements en cours
     }
 
+    /**
+     * Accepte une quête pour le joueur
+     * @param player Le joueur acceptant la quête
+     * @param quest La quête à accepter
+     * @return true si la quête a été ajoutée avec succès
+     */
     public boolean acceptQuest(Player player, Quest quest) {
         if (!activeQuests.contains(quest)) {
             activeQuests.add(quest);
@@ -29,6 +60,13 @@ public class QuestSystem {
         return false;
     }
 
+    /**
+     * Complete une quête pour le joueur
+     * @param player Le joueur complétant la quête
+     * @param quest La quête à compléter
+     * @param items Items optionnels requis pour la quête
+     * @return true si la quête a été complétée avec succès
+     */
     public boolean completeQuest(Player player, Quest quest, ItemStack... items) {
         if (activeQuests.contains(quest) && quest.isComplete(player)) {
             activeQuests.remove(quest);
@@ -39,17 +77,28 @@ public class QuestSystem {
         return false;
     }
 
+    /**
+     * Donne les récompenses de quête au joueur
+     * @param player Le joueur à récompenser
+     * @param quest La quête complétée
+     */
     private void giveReward(Player player, Quest quest) {
-        // Give player quest rewards
+        // Donne les objets de récompense
         player.addItem(quest.getReward());
+        
+        // Ajoute la réputation
         village.getReputationSystem().addReputation(
             player.getUUID(), 
             quest.getReputationReward()
         );
     }
 
+    /**
+     * Mise à jour quotidienne du système de quêtes
+     * - Vérifie les quêtes expirées
+     * - Nettoie les quêtes terminées
+     */
     public void dailyUpdate() {
-        // Check for expired quests
         activeQuests.removeIf(quest -> {
             if (quest.isExpired()) {
                 quest.onExpire();
@@ -59,6 +108,10 @@ public class QuestSystem {
         });
     }
 
+    /**
+     * Obtient la liste des quêtes disponibles
+     * @return Liste des quêtes actives
+     */
     public List<Quest> getAvailableQuests() {
         return activeQuests;
     }

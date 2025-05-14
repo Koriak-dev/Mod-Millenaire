@@ -1,3 +1,11 @@
+/**
+ * FICHIER: AbstractVillage.java
+ * DESCRIPTION: Classe abstraite de base pour tous les villages
+ * RESPONSABILITES:
+ * - Définit l'interface commune pour tous les villages
+ * - Fournit les méthodes de base pour la gestion des villages
+ * - Définit le contrat pour les implémentations spécifiques
+ */
 package com.millenaire.civilisations.village;
 
 import net.minecraft.core.BlockPos;

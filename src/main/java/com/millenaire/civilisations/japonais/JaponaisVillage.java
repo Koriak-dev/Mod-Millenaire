@@ -1,3 +1,21 @@
+/**
+ * FICHIER: JaponaisVillage.java
+ * DESCRIPTION: Implémentation du village japonais traditionnel
+ * CARACTERISTIQUES:
+ * - Architecture traditionnelle (temples, maisons)
+ * - Jardin zen central
+ * - Organisation spatiale harmonieuse
+ * - Système de maintenance des structures
+ */
+/**
+ * FICHIER: JaponaisVillage.java
+ * DESCRIPTION: Implémentation du village japonais
+ * CARACTERISTIQUES:
+ * - Architecture traditionnelle japonaise
+ * - Temples et pagodes
+ * - Maisons en bois et papier
+ * - Jardins zen
+ */
 package com.millenaire.civilisations.japonais;
 import com.millenaire.civilisations.AbstractCivilisation;
 import net.minecraft.world.level.block.DoorBlock;
@@ -9,9 +27,17 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 
 public class JaponaisVillage extends AbstractVillage {
+    // Données du village
     private final VillageData villageData;
+    
+    // Référence à la civilisation japonaise
     private final JaponaisCivilisation civilisation;
 
+    /**
+     * Constructeur du village japonais
+     * @param villageData Données du village
+     * @param civilisation Civilisation associée
+     */
     public JaponaisVillage(VillageData villageData, JaponaisCivilisation civilisation) {
         this.villageData = villageData;
         this.civilisation = civilisation;
@@ -32,20 +58,36 @@ public class JaponaisVillage extends AbstractVillage {
         return civilisation;
     }
 
+    /**
+     * Génère les structures principales du village
+     */
     public void generateStructures() {
         BlockPos center = villageData.getCenterPos();
         Level level = civilisation.getWorld();
         
-        // Temple central
+        // 1. Temple central (élément spirituel)
         generateTemple(level, center);
         
-        // Maisons traditionnelles
+        // 2. Maisons d'habitation (disposition circulaire)
         generateHouses(level, center);
         
-        // Jardin zen
+        // 3. Jardin zen (espace méditatif)
         generateGarden(level, center);
     }
     
+    /**
+     * Génère le temple central
+     * @param level Monde Minecraft
+     * @param pos Position centrale du temple
+     */
+    /**
+     * Génère un temple japonais traditionnel avec :
+     * - Base en bois foncé
+     * - Colonnes en bois brut
+     * - Toit en surplomb
+     * @param level Le monde Minecraft
+     * @param pos Position centrale du temple
+     */
     private void generateTemple(Level level, BlockPos pos) {
         // Base du temple (7x7)
         for (int x = -3; x <= 3; x++) {
@@ -71,6 +113,11 @@ public class JaponaisVillage extends AbstractVillage {
         }
     }
     
+    /**
+     * Génère les habitations traditionnelles
+     * @param level Monde Minecraft
+     * @param center Centre du village
+     */
     private void generateHouses(Level level, BlockPos center) {
         // Génère 6 maisons autour du temple
         for (int i = 0; i < 6; i++) {
@@ -101,6 +148,11 @@ public class JaponaisVillage extends AbstractVillage {
         }
     }
     
+    /**
+     * Génère le jardin zen
+     * @param level Monde Minecraft
+     * @param center Centre du village
+     */
     private void generateGarden(Level level, BlockPos center) {
         // Jardin zen (15x15)
         for (int x = -7; x <= 7; x++) {
@@ -151,6 +203,11 @@ public class JaponaisVillage extends AbstractVillage {
         }
     }
 
+    /**
+     * Met à jour l'état du village
+     * - Vérifie l'intégrité des structures
+     * - Effectue les réparations nécessaires
+     */
     public void update() {
         Level level = civilisation.getWorld();
         BlockPos center = villageData.getCenterPos();

@@ -1,3 +1,20 @@
+/**
+ * FICHIER: AztequeVillage.java
+ * DESCRIPTION: Implémentation du village aztèque
+ * RESPONSABILITES:
+ * - Génération des structures du village
+ * - Mise à jour des bâtiments
+ * - Gestion de l'expansion
+ */
+/**
+ * FICHIER: AztequeVillage.java
+ * DESCRIPTION: Implémentation du village aztèque
+ * CARACTERISTIQUES:
+ * - Pyramides centrales
+ * - Maisons en adobe
+ * - Jardins flottants (chinampas)
+ * - Architecture mésoaméricaine
+ */
 package com.millenaire.civilisations.azteques;
 
 import com.millenaire.civilisations.AbstractCivilisation;
@@ -9,9 +26,17 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 
 public class AztequeVillage extends AbstractVillage {
+    // Données du village
     private final VillageData villageData;
+    
+    // Référence à la civilisation aztèque
     private final AztequeCivilisation civilisation;
 
+    /**
+     * Crée un nouveau village aztèque
+     * @param villageData Les données du village
+     * @param civilisation La civilisation associée
+     */
     public AztequeVillage(VillageData villageData, AztequeCivilisation civilisation) {
         this.villageData = villageData;
         this.civilisation = civilisation;
@@ -32,20 +57,31 @@ public class AztequeVillage extends AbstractVillage {
         return civilisation;
     }
 
+    /**
+     * Génère les structures principales du village
+     */
     public void generateStructures() {
         BlockPos center = villageData.getCenterPos();
         Level level = civilisation.getWorld();
         
+        // 1. Générer la pyramide centrale
         generatePyramid(level, center);
         
+        // 2. Générer les 4 temples cardinaux
         for (Direction direction : Direction.Plane.HORIZONTAL) {
             BlockPos templePos = center.relative(direction, 15);
             generateTemple(level, templePos, direction);
         }
         
+        // 3. Générer les habitations
         generateHouses(level, center);
     }
     
+    /**
+     * Génère une pyramide aztèque
+     * @param level Le monde Minecraft
+     * @param pos Position centrale de la base
+     */
     private void generatePyramid(Level level, BlockPos pos) {
         int height = 5;
         int baseSize = 7;
@@ -62,6 +98,12 @@ public class AztequeVillage extends AbstractVillage {
         }
     }
 
+    /**
+     * Génère un temple aztèque
+     * @param level Le monde Minecraft
+     * @param pos Position centrale du temple
+     * @param facing Orientation du temple
+     */
     private void generateTemple(Level level, BlockPos pos, Direction facing) {
         for (int x = -2; x <= 2; x++) {
             for (int z = -2; z <= 2; z++) {
@@ -79,6 +121,11 @@ public class AztequeVillage extends AbstractVillage {
         level.setBlock(pos.offset(0, 4, 0), Blocks.STONE_BRICK_STAIRS.defaultBlockState(), 3);
     }
     
+    /**
+     * Génère les habitations du village
+     * @param level Le monde Minecraft
+     * @param center Position centrale du village
+     */
     private void generateHouses(Level level, BlockPos center) {
         for (int i = 0; i < 8; i++) {
             double angle = i * Math.PI / 4;
@@ -100,6 +147,11 @@ public class AztequeVillage extends AbstractVillage {
         }
     }
 
+    /**
+     * Met à jour l'état du village
+     * - Répare les structures endommagées
+     * - Vérifie l'intégrité des bâtiments
+     */
     public void update() {
         Level level = civilisation.getWorld();
         BlockPos center = villageData.getCenterPos();
