@@ -3,6 +3,7 @@ package com.millenaire.interactions;
 import com.millenaire.civilisations.village.AbstractVillage;
 import com.millenaire.entity.NPCEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -50,8 +51,10 @@ public class NPCInteractionManager {
     private void handleMerchantInteraction(Player player, NPCEntity npc) {
         // Trade interactions
         ItemStack offeredItem = player.getMainHandItem();
-        ItemStack requestedItem = npc.getOfferedItem();
-        village.getEconomyManager().processTrade(offeredItem, requestedItem);
+        ItemStack requestedItem = npc.getTradeOffer(); // Méthode corrigée
+        if (requestedItem != null && !offeredItem.isEmpty()) {
+            village.getEconomyManager().processTrade(offeredItem, requestedItem);
+        }
     }
 
     private void handleQuestGiverInteraction(Player player, NPCEntity npc) {

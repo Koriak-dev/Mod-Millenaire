@@ -52,6 +52,14 @@ dependencies {
     
     // Forge Event Bus
     implementation 'net.minecraftforge:eventbus:6.0.3'
+
+    // Test dependencies
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+}
+
+test {
+    useJUnitPlatform()
 }
 
 jar {

@@ -1,4 +1,4 @@
-package com.millenaire.civilisations.village;
+j'ai une erreur 
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
