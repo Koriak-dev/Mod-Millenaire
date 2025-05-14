@@ -1,13 +1,29 @@
-# Changelog
+# Journal des modifications
 
-All notable changes to this project will be documented in this file.
+## [1.1.0] - 2025-05-14
+
+### Ajouts
+- Implémentation complète des structures Aztèques (pyramides, temples)
+- Ajout des générateurs de structures Japonaises (temples shinto, maisons)
+- Amélioration des villages Normands (châteaux, fermes)
+
+### Corrections
+- Résolution des warnings sur les méthodes non utilisées
+  - generatePyramid()
+  - generateHouses()
+  - generateMarket()
+  - generateTraditionalHouse()
+  - generateTemple()
 
 ## [1.0.0] - 2025-05-12
-### Added
-- Initial release of Millenaire mod
-- Core systems for civilizations and villages
-- NPC interaction system
-- Quest and reputation systems
-- Economy and trading mechanics
-- World generation for villages
-- Basic civilizations: Normans, Aztecs, Japanese, Byzantines, Indians, Mayans
+- Version initiale du mod
+- Systèmes de base pour les civilisations
+- Civilisations implémentées :
+  - Normands (châteaux, villages)
+  - Aztèques (structures de base)  
+  - Japonais (structures de base)
+  - Byzantins
+  - Indiens
+  - Mayas
+- Interactions avec les PNJ
+- Système de quêtes et réputation

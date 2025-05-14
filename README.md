@@ -1,40 +1,39 @@
-# Millenaire Mod
+# Mod Millénaire
 
 [![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-blue.svg)]()
 
-A Minecraft mod adding historically-inspired civilizations that grow and interact with players.
+Un mod Minecraft ajoutant des civilisations historiques qui évoluent et interagissent avec les joueurs.
 
-## Features
+## Fonctionnalités
 
-- Multiple historically-inspired civilizations (Normans, Aztecs, Japanese, etc.)
-- Dynamic village growth and development
-- NPC interactions and quests
-- Economy and trading systems
-- Cultural buildings and structures
-- Reputation system with different civilizations
+- Civilisations implémentées :
+  - **Aztèques** : Pyramides, temples sacrificiels, marchés, habitations
+  - **Japonais** : Temples shinto, maisons traditionnelles  
+  - **Normands** : Châteaux, villages médiévaux, fermes
+- Croissance dynamique des villages
+- Système d'interaction avec les PNJ
+- Quêtes et système de réputation
+- Économie et échanges commerciaux
+- Génération de structures culturelles
 
-## Requirements
+## Prérequis
 
 - Minecraft 1.20.1
-- Forge 47.1.0 or later
+- Forge 47.1.0 ou supérieur
 - Java 17
 
 ## Installation
 
-1. Download the latest release from [Releases](https://github.com/koriak-dev/millenaire-mod/releases)
-2. Place the jar file in your `mods` folder
-3. Launch Minecraft with Forge
+1. Télécharger la dernière version depuis [Releases]()
+2. Placer le fichier .jar dans le dossier `mods`
+3. Lancer Minecraft avec Forge
 
-## Building from Source
+## Développement
 
-1. Clone the repository
-2. Run `gradlew build` (Windows) or `./gradlew build` (Linux/Mac)
-3. Find the built mod in `build/libs`
+Pour compiler le mod :
+```bash
+git clone [repo]
+./gradlew build
+```
 
-## Contributing
-
-Contributions are welcome! Please open an issue or pull request on GitHub.
-
-## License
-
-All Rights Reserved
+## Licence
