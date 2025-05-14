@@ -18,12 +18,10 @@ public class JaponaisNPCEntity extends NPCEntity {
             .add(Attributes.ATTACK_DAMAGE, 2.0);
     }
 
-    @Override
     public String getCivilisation() {
         return "japonais";
     }
 
-    @Override
     public String getProfession() {
         // Types de PNJ japonais
         String[] professions = {
