@@ -15,7 +15,10 @@ import com.millenaire.registries.ModItems;
 import com.millenaire.util.CompatibilityManager;
 import com.millenaire.util.LogHelper;
 import net.minecraftforge.common.MinecraftForge;
+import com.millenaire.commands.ModCommands;
+import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -49,6 +52,12 @@ public class MillenaireMod {
         LogHelper.info("Initialisation du mod Millénaire");
         CompatibilityManager.checkCompatibilities();
         
-        // TODO: Initialisation du réseau (si nécessaire)
+        // Enregistrement des événements de commandes
+        MinecraftForge.EVENT_BUS.register(this);
+    }
+
+    @SubscribeEvent
+    public void onRegisterCommands(RegisterCommandsEvent event) {
+        ModCommands.register(event.getDispatcher());
     }
 }
