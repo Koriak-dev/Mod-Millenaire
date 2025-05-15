@@ -12,7 +12,7 @@ archivesBaseName = 'millenaire'
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 minecraft {
-    mappings channel: 'parchment', version: '2023.09.03-1.20.1'
+    mappings channel: 'official', version: '1.20.1'
     
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
@@ -49,6 +49,7 @@ repositories {
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.20.1-47.2.0'
+    implementation fg.deobf('net.minecraftforge:forgespi:6.0.0')
     
     // Forge Event Bus
     implementation 'net.minecraftforge:eventbus:6.0.3'

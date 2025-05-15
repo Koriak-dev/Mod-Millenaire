@@ -9,8 +9,8 @@
 package com.millenaire.civilisations;
 
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.util.INBTSerializable;
+import net.minecraft.resources.ResourceLocation;
 
 public class CivilisationData implements INBTSerializable<CompoundTag> {
     private ResourceLocation civilisationId;

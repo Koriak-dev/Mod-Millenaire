@@ -19,15 +19,18 @@ public class VillagePlacement {
      * @return true si l'emplacement est valide
      */
     public static boolean isValidVillageLocation(Level world, BlockPos pos) {
+        int spacing = getVillageSpacing();
+        int chunkX = pos.getX() >> 4;
+        int chunkZ = pos.getZ() >> 4;
         // TODO: Implémenter la logique de placement des villages
-        return true;
+        return (chunkX % spacing == 0) && (chunkZ % spacing == 0);
     }
     
     /**
      * @return L'espacement minimum entre les villages (en chunks)
      */
     public static int getVillageSpacing() {
-        return 32; // 32 chunks = 512 blocs
+        return 20; // 20 chunks = 320 blocs
     }
     
     /**
