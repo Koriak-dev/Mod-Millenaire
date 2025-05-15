@@ -16,6 +16,8 @@ import net.minecraft.resources.ResourceLocation;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.List;
+import java.util.ArrayList;
 
 public class CivilisationRegistry {
     // Map des civilisations enregistrées (ID -> Civilisation)
@@ -48,5 +50,12 @@ public class CivilisationRegistry {
         registerCivilisation(new NormandCivilisation());
         registerCivilisation(new AztequeCivilisation());
         registerCivilisation(new JaponaisCivilisation());
+    }
+
+    /**
+     * @return Une liste de toutes les civilisations enregistrées
+     */
+    public static List<AbstractCivilisation> getCivilisations() {
+        return new ArrayList<>(CIVILISATIONS.values());
     }
 }
